@@ -34,12 +34,12 @@
 
 DB36: 
 
-Notes from the (FastBLAST paper)[http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0003589]:
+Notes from the [FastBLAST paper](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0003589):
 
-> "Our limit of 1/2,000 may not seem stringent, but some proteins are
+> Our limit of 1/2,000 may not seem stringent, but some proteins are
 > homologous to over 1/100 of all proteins (e.g., gi 16121781 has
 > 107,873 homologs at 45 bits or above, which represents about 2% of
-> Genbank NR)."
+> Genbank NR).
 
 ##### 1.2 Revised computational effort (cup hours) estimate for N x N matrix
 
