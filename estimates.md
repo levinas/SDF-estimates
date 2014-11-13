@@ -31,6 +31,16 @@
 ## Explanations for Estimates
 
 ##### 1.1 Revised size estimate for the N x N matrix and output size
+
+DB36: 
+
+Notes from the FastBLAST paper:
+
+"Our limit of 1/2,000 may not seem stringent, but some proteins are
+homologous to over 1/100 of all proteins (e.g., gi 16121781 has
+107,873 homologs at 45 bits or above, which represents about 2% of
+Genbank NR)."
+
 ##### 1.2 Revised computational effort (cup hours) estimate for N x N matrix
 
 ##### 2.1 Number of reads input
