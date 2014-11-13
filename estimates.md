@@ -30,25 +30,25 @@
 
 ## Explanations for Estimates
 
-##### Revised size estimate for the N x N matrix and output size
-##### Revised computational effort (cup hours) estimate for N x N matrix
+##### 1.1 Revised size estimate for the N x N matrix and output size
+##### 1.2 Revised computational effort (cup hours) estimate for N x N matrix
 
-##### Number of reads input
-##### Number of contigs output and N50
-##### Number of proteins called from each caller
-##### Number of unique proteins in the block
-##### Mean number of internally similar proteins at X cutoff (distribution)
-##### Size distribution and GC ratios
-##### Fraction with confident function assignments
-##### Fraction with no similar hits in sample and DB36
-##### Estimate of number of novel proteins
+##### 2.1 Number of reads input
+##### 2.2 Number of contigs output and N50
+##### 2.3 Number of proteins called from each caller
+##### 2.4 Number of unique proteins in the block
+##### 2.5 Mean number of internally similar proteins at X cutoff (distribution)
+##### 2.6 Size distribution and GC ratios
+##### 2.7 Fraction with confident function assignments
+##### 2.8 Fraction with no similar hits in sample and DB36
+##### 2.9 Estimate of number of novel proteins
 
-##### Fraction of proteins on a contig with > x orfs (2, ..., n)
-##### Fraction estimated to be novel operons (all novel orfs)
-##### Fraction estimated to linked to known pathways
+##### 3.1 Fraction of proteins on a contig with > x orfs (2, ..., n)
+##### 3.2 Fraction estimated to be novel operons (all novel orfs)
+##### 3.3 Fraction estimated to linked to known pathways
 
-##### Rate of novel proteins per megabase of assembled contigs (MoAC)
-##### Rate of novel operons per MoAC
-##### Expansion rate of known protein family members per MoAC
-##### Global estimate of novel proteins
-##### Global estimate of unique proteins
+##### 4.1 Rate of novel proteins per megabase of assembled contigs (MoAC)
+##### 4.2 Rate of novel operons per MoAC
+##### 4.3 Expansion rate of known protein family members per MoAC
+##### 4.4 Global estimate of novel proteins
+##### 4.5 Global estimate of unique proteins
