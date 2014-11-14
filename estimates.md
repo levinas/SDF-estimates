@@ -27,8 +27,9 @@
    - [x] Number of unique proteins in the block  
          soil9: 99.9% unique proteins, ~20% unique protein calls shared by Prodigal and FragGeneScan
 		 
-   - [ ] Mean number of internally similar proteins at X cutoff (distribution)
-         
+   - [x] Mean number of internally similar proteins at X cutoff (distribution)
+         [see distribution below](#### 2.6 Mean number of internally similar proteins at X cutoff (distribution)
+)
 
    - [ ] Fraction with confident function assignments
    - [ ] Fraction with no similar hits in sample and DB36
@@ -194,8 +195,8 @@ all-to-all soil9 diamond run.
 
 
 Here's the distribution of the numbers of hits for each protein in the
-soil9 comparison. Proteins with one match are singletons as they
-always match themselves.
+soil9 comparison. Proteins with one match are singletons as each protein
+always matches itself.
 
 ```
 Hits |Percent  Histogram
