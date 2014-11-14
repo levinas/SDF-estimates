@@ -41,7 +41,9 @@
 		 For a larger reference DB, the fraction of novel soil proteins may be around 30%.
 
 3. Contiguity and pathway related estimates
-   - [ ] Fraction of proteins on a contig with > x orfs (2, ..., n)
+   - [ ] Fraction of proteins on a contig with > x orfs (2, ..., n)  
+         [see two distributions below](https://github.com/levinas/SDF-estimates/blob/master/estimates.md#31-fraction-of-proteins-on-a-contig-with--x-orfs-2--n)
+   
    - [ ] Fraction estimated to be novel operons (all novel orfs)
    - [ ] Fraction estimated to linked to known pathways
 
@@ -264,6 +266,18 @@ It is puzzling that the cow rumen has a higher fraction of unmatched proteins.
 
 #### 3.1 Fraction of proteins on a contig with > x orfs (2, ..., n)
 
+```
+ORFs    | Percent  Histogram
+1       | 54.05%   ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+2       | 39.15%   ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+4-7     |  4.30%   ▬▬▬▬▬
+8-15    |  1.32%   ▬▬
+16-31   |  0.62%   ▬
+32-63   |  0.34%   ▬
+64-127  |  0.17%   ▬
+128-255 |  0.04%   ▬
+256+    |  0.01%   ▬
+```
 
 #### 3.2 Fraction estimated to be novel operons (all novel orfs)
 
