@@ -63,7 +63,7 @@ Esitimated proteins for Soil9 + ALER + ForestSoil + Cow Rumen + HMP + Other MG s
 
 Total proteins: 1 B for one gene caller
 
-**Matrix density**
+##### Matrix density
 
 Notes from the [FastBLAST paper](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0003589):
 
@@ -111,6 +111,17 @@ It's definitely not that fast.
 
 #### 2.1 Number of reads input
 
+Soil
+
+`
+Iowa continuous corn:     2,055,601,258 reads,  196,708,830,076 bp
+Iowa native prairie:      3,750,844,486 reads,  326,986,888,235 bp
+Kansas cultivated corn:   2,677,222,281 reads,  272,276,185,410 bp
+Kansas native prairie:    5,126,775,452 reads,  597,933,511,278 bp
+Wisconsin continous corn: 1,912,865,700 reads,  192,128,891,088 bp
+Wisconsin native priarie: 2,098,317,886 reads,  211,016,377,208 bp
+Great Prairie Total:     12,499,978,386 reads, 1797,050,683,295 bp
+`
 
 #### 2.2 Number of contigs output and N50
 
