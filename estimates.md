@@ -11,10 +11,10 @@
    - [x] Number of reads input  
          soil9: 20 billion reads, 5 TB fastq  
 		 cow: ~200 million reads, 150 GB MiSeq fastq
-   - [x] Number of contigs output and N50
+   - [x] Number of contigs output and N50  
          soil9: 33 million, 21 GB, N50 = 550  
 		 cow: 25 million, 16 GB, N50 = 439
-   - [x] Size distribution and GC ratios
+   - [x] Size distribution and GC ratios  
          soil9: GC%=62.2%, length: [300, 396K], average: 567  
 		 cow: GC%=45.4%, length: [300, 913K], average: 540
    - [ ] Number of proteins called from each caller
