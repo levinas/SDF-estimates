@@ -111,7 +111,7 @@ It's definitely not that fast.
 
 #### 2.3 Number of proteins called from each caller
 
-43,940,826 unique proteins called by Prodigal.
+43,940,826 unique proteins called by Prodigal.  
 41,593,694 unique proteins called by FragGeneScan.
 
 ?? unique proteins called by both Prodigal and FragGeneScan.
