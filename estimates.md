@@ -141,7 +141,6 @@ BareFallow soil: ~5.0 B reads
 Grassland soil:  ~3.8 B reads
 
 Combined 9 soil sample total: 20 B reads, 5 TB
-
 ```
 
 Cow rumen: ~200 M reads, 150 GB, MiSeq reads (~250 bp), ~5% of all JGI cow rumen data
@@ -167,13 +166,27 @@ FragGeneScan: 41,603,612 proteins (99.976% unique)
 
 #### 2.5 Number of unique proteins in the block
 
-Soil9  
+Soil9: ~43 million
+
 43,940,826 unique proteins called by Prodigal.  
 41,593,694 unique proteins called by FragGeneScan.
 
 8,626,555 (~20%) unique protein calls shared by both Prodigal and FragGeneScan.
 
 #### 2.6 Mean number of internally similar proteins at X cutoff (distribution)
+
+| Identity % | Hits % | Aggregate hits % |
+| ----- | ----- | ----- |
+| 100   |   0.1 |   0.1 |
+| 90-99 |   0.5 |   0.6 |
+| 80-89 |   1.8 |   2.3 |
+| 70-79 |   4.7 |   7.0 |
+| 60-69 |  11.3 |  18.2 |
+| 50-59 |  22.8 |  41.0 |
+| 40-49 |  31.1 |  72.1 |
+| 30-39 |  24.0 |  96.1 |
+| 20-29 |   3.9 | 100.0 |
+
 #### 2.7 Fraction with confident function assignments
 #### 2.8 Fraction with no similar hits in sample and DB36
 #### 2.9 Estimate of number of novel proteins
