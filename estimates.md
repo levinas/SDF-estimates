@@ -27,8 +27,8 @@
    - [x] Number of unique proteins in the block  
          soil9: 99.9% unique proteins, ~20% unique protein calls shared by Prodigal and FragGeneScan
 		 
-   - [x] Mean number of internally similar proteins at X cutoff (distribution)
-         [see distribution below](#### 2.6 Mean number of internally similar proteins at X cutoff (distribution)
+   - [x] Mean number of internally similar proteins at X cutoff (distribution)  
+         [see distribution below](####2.6-Mean-number-of-internally-similar-proteins-at-X-cutoff-(distribution))
 )
 
    - [ ] Fraction with confident function assignments
