@@ -54,9 +54,10 @@
    - [ ] Expansion rate of known protein family members per MoAC
    
    - [x] Global estimate of novel proteins
-         300 million
+         ~300 million
 		 
-   - [ ] Global estimate of unique proteins
+   - [x] Global estimate of unique proteins
+         ~500 million
 
 ## Explanations for Estimates
 
@@ -293,6 +294,11 @@ overall estimate is 300 novel proteins / MoAC.
 300 million based on the estimated 30% ratio of novel proteins in 1
 billion metagenomic proteins.
 
-
 #### 4.5 Global estimate of unique proteins
 
+This is difficult to estimate. For the soil9 sample, 99% of the
+proteins are unique at the MD5 level. Some of this is due to slightly
+different gene starts and endings. As we add more metagenomic samples
+into the same pool, we could also expect more proteins to converge. 
+
+My guess is half of the 1 billion proteins will be unique. 
