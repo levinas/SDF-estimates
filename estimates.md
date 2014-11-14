@@ -28,10 +28,12 @@
          soil9: 99.9% unique proteins, ~20% unique protein calls shared by Prodigal and FragGeneScan
 		 
    - [x] Mean number of internally similar proteins at X cutoff (distribution)  
-         [see distribution below](#26-mean-number-of-internally-similar-proteins-at-x-cutoff)
+         [see two distributions below](#26-mean-number-of-internally-similar-proteins-at-x-cutoff)
 
    - [ ] Fraction with confident function assignments
+   
    - [ ] Fraction with no similar hits in sample and DB36
+   
    - [ ] Estimate of number of novel proteins
 
 3. Contiguity and pathway related estimates
@@ -217,6 +219,21 @@ Hits |Percent  Histogram
 ```
 
 #### 2.7 Fraction with confident function assignments
+
+Mapping soil9 proteins to DB36:
+
+```
+0.291  has a confident function assigment
+0.449  matches a non-hypothetical protein
+0.636  matches any reference protein
+```
+Criteria for *confident function assignment*:
+ * identity >= 50%
+ * mapped region covers >= 70% sequence length
+ * bit score >= 70 (roughly 1e-10)
+
+Estimated based on a sample of 5 million proteins from 12%.
+
 #### 2.8 Fraction with no similar hits in sample and DB36
 #### 2.9 Estimate of number of novel proteins
 
