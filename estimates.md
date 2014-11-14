@@ -29,7 +29,6 @@
 		 
    - [x] Mean number of internally similar proteins at X cutoff (distribution)  
          [see distribution below](####2.6-Mean-number-of-internally-similar-proteins-at-X-cutoff)
-)
 
    - [ ] Fraction with confident function assignments
    - [ ] Fraction with no similar hits in sample and DB36
