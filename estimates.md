@@ -51,7 +51,7 @@ This protein alone would account for 0.0004 of the matrix density.
 
 In the future, the matrix for reference NRs will be dominated by close strains.
 
-Suppose:
+Suppose:  
 (1) we have 1000 taxonomic groups each containing 1000 close strains  
 (2) two genomes from the same group share half of the proteins  
 (3) two genomes from different groups share 1/5 of the proteins  
