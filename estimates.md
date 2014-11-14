@@ -63,7 +63,7 @@ Esitimated proteins for Soil9 + ALER + ForestSoil + Cow Rumen + HMP + Other MG s
 
 Total proteins: 1 B for one gene caller
 
-*Matrix density*
+**Matrix density**
 
 Notes from the [FastBLAST paper](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0003589):
 
