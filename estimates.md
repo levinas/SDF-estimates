@@ -8,12 +8,18 @@
          2 million CPU-hours
 
 2. Summary statistics on the metagenome assemblies for each block
-   - [ ] Number of reads input
-   - [ ] Number of contigs output and N50
+   - [x] Number of reads input  
+         soil9: 20 billion reads, 5 TB fastq  
+		 cow: ~200 million reads, 150 GB MiSeq fastq
+   - [x] Number of contigs output and N50
+         soil9: 33 million, 21 GB, N50 = 550  
+		 cow: 25 million, 16 GB, N50 = 439
+   - [x] Size distribution and GC ratios
+         soil9: GC%=62.2%, length: [300, 396K], average: 567  
+		 cow: GC%=45.4%, length: [300, 913K], average: 540
    - [ ] Number of proteins called from each caller
    - [ ] Number of unique proteins in the block
    - [ ] Mean number of internally similar proteins at X cutoff (distribution)
-   - [ ] Size distribution and GC ratios
    - [ ] Fraction with confident function assignments
    - [ ] Fraction with no similar hits in sample and DB36
    - [ ] Estimate of number of novel proteins
@@ -111,21 +117,42 @@ It's definitely not that fast.
 
 #### 2.1 Number of reads input
 
-Soil
+Soil9: 20 billion reads, 5 TB uncompressed fastq files
 
 ```
-Iowa continuous corn:     2,055,601,258 reads,  196,708,830,076 bp
-Iowa native prairie:      3,750,844,486 reads,  326,986,888,235 bp
-Kansas cultivated corn:   2,677,222,281 reads,  272,276,185,410 bp
-Kansas native prairie:    5,126,775,452 reads,  597,933,511,278 bp
-Wisconsin continous corn: 1,912,865,700 reads,  192,128,891,088 bp
-Wisconsin native priarie: 2,098,317,886 reads,  211,016,377,208 bp
-Great Prairie Total:     12,499,978,386 reads, 1797,050,683,295 bp
+Iowa continuous corn:       2,055,601,258 reads,  196,708,830,076 bp
+Iowa native prairie:        3,750,844,486 reads,  326,986,888,235 bp
+Kansas cultivated corn:     2,677,222,281 reads,  272,276,185,410 bp
+Wisconsin continous corn:   1,912,865,700 reads,  192,128,891,088 bp
+Wisconsin native prairie:   2,098,317,886 reads,  211,016,377,208 bp
+Wisconsin restored prairie:   347,778,670 reads,   52,514,579,170 bp
+Great Prairie Total:       12,842,630,281 reads, 1251,631,751,187 bp
+
+Arable soil:     ~1.0 B reads
+BareFallow soil: ~5.0 B reads
+Grassland soil:  ~3.8 B reads
+
+Combined 9 soil sample total: 20 B reads, 5 TB
+
 ```
+
+Cow rumen: ~200 M reads, 150 GB, MiSeq reads (~250 bp)
+~6% of all JGI cow rumen data
 
 #### 2.2 Number of contigs output and N50
 
-#### 2.3 Number of proteins called from each caller
+Soil9: 33 M contigs, 21 GB fasta, N50 = 550
+Cow: 25 M contigs, 16 GB fasta, N50 = 439
+
+Soil9: Number of Contigs=33,825,769, Total bp=19,162,572,560
+Cow: Number of Contigs=25,092,056, Total bp=13,551,414,369
+
+#### 2.3 Size distribution and GC ratios
+
+Soil9: Average length=566.5, Average GC%=62.2%, Shortest=300, Longest=396,247
+Cow: Average length=540.1, Average GC%=45.4%, Shortest=300, Longest=913,566
+
+#### 2.4 Number of proteins called from each caller
 
 43,940,826 unique proteins called by Prodigal.  
 41,593,694 unique proteins called by FragGeneScan.
@@ -133,9 +160,8 @@ Great Prairie Total:     12,499,978,386 reads, 1797,050,683,295 bp
 ?? unique proteins called by both Prodigal and FragGeneScan.
 
 
-#### 2.4 Number of unique proteins in the block
-#### 2.5 Mean number of internally similar proteins at X cutoff (distribution)
-#### 2.6 Size distribution and GC ratios
+#### 2.5 Number of unique proteins in the block
+#### 2.6 Mean number of internally similar proteins at X cutoff (distribution)
 #### 2.7 Fraction with confident function assignments
 #### 2.8 Fraction with no similar hits in sample and DB36
 #### 2.9 Estimate of number of novel proteins
