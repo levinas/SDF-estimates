@@ -136,7 +136,7 @@ Combined 9 soil sample total: 20 B reads, 5 TB
 
 ```
 
-Cow rumen: ~200 M reads, 150 GB, MiSeq reads (~250 bp), ~6% of all JGI cow rumen data
+Cow rumen: ~200 M reads, 150 GB, MiSeq reads (~250 bp), ~5% of all JGI cow rumen data
 
 #### 2.2 Number of contigs output and N50
 
