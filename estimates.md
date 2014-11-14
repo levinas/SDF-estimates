@@ -176,7 +176,7 @@ Soil9: ~43 million
 #### 2.6 Mean number of internally similar proteins at X cutoff (distribution)
 
 | Identity % | Hits % | Aggregate hits % |
-| ----- | ----- | ----- |
+| :---: | ----: | ----: |
 | 100   |   0.1 |   0.1 |
 | 90-99 |   0.5 |   0.6 |
 | 80-89 |   1.8 |   2.3 |
