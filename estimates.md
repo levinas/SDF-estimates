@@ -52,10 +52,10 @@ This protein alone would account for 0.0004 of the matrix density.
 In the future, the matrix for reference NRs will be dominated by close strains.
 
 Suppose:
-(1) we have 1000 taxonomic groups each containing 1000 close strains
-(2) two genomes from the same group share half of the proteins
-(3) two genomes from different groups share 1/5 of the proteins
-(4) 300 proteins (10%) are universally shared
+(1) we have 1000 taxonomic groups each containing 1000 close strains  
+(2) two genomes from the same group share half of the proteins  
+(3) two genomes from different groups share 1/5 of the proteins  
+(4) 300 proteins (10% out of ~3,000 proteins in a genome) are universally shared  
 
 This would mean a 1M x 1M matrix with density:
 0.5 * 0.5<sup>2</sup> + 0.4 * 0.2<sup>2</sup> + 0.1 * 1<sup>2</sup> = 0.24
