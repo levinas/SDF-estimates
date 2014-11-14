@@ -31,7 +31,7 @@
 
 ## Explanations for Estimates
 
-##### 1.1 Revised size estimate for the N x N matrix and output size
+#### 1.1 Revised size estimate for the N x N matrix and output size
 
 N = 1 billion  
 Output size: [1 PB, 1000 PB]  
@@ -47,12 +47,12 @@ SEED NR in 2012: 22,291,704 unique proteins
 All-to-all blast: 736,909,504 hits (triangle, e-value below 1e-5 (roughly 54 bits))  
 Matrix ensity: 736M / (22M * 22M/2) = 2.97e-6
 
-[UniParc Oct-2014](http://www.uniprot.org/statistics/UniParc): 71,788,376 proteins__
+[UniParc Oct-2014](http://www.uniprot.org/statistics/UniParc): 71,788,376 proteins  
 Estiamted all-to-all output size: (71M/11M)<sup>2</sup> * 1 = ~42 TB
 
 Soil9 (prodigal): 57,118,321 proteins (44,004,484 are unique)  
 soil-to-soil: 67,798,709,206 hits (above 40 bits, k = 10<sup>6</sup>)  
-Matrix density: 67B/(57M<sup>2</sup>) = 2.08e-5 (overestimating because of redundancy)
+Matrix density: 67B/(57M<sup>2</sup>) = 2.08e-5 (overestimating because of redundancy)  
 Output size: 18 TB
 
 Cow (~10% reads, prodigal), 29,717,714 proteins  
@@ -72,7 +72,7 @@ In the near future, the matrix density will go up as a small set of
 overly sampled strains dominate the matrix. In the long run, the
 density should come down if the sequencing bias diminishes.
 
-Suppose:
+Suppose:  
 (1) we have 1000 taxonomic groups each containing 1000 close strains  
 (2) each genome contains 3000 proteins of which 1/3 are unique  
 (3) 300 proteins (10% out of ~3,000 proteins in a genome) are universally shared  
@@ -84,7 +84,7 @@ This would mean a 1B x 1B protein matrix with density:
 
 
 
-##### 1.2 Revised computational effort (cup hours) estimate for N x N matrix
+#### 1.2 Revised computational effort (cup hours) estimate for N x N matrix
 
 Sample DB36 (9% query) vs DB36: 60 CPU-hours
 
@@ -95,12 +95,12 @@ If diamond is [20,000 times faster than blast](http://ab.inf.uni-tuebingen.de/so
 that means it would only take 126,000/20,000 = 6 CPU-hours for the all-to-all comparison of a 6M-protein NR.
 It's definitely not that fast. 
 
-##### 2.1 Number of reads input
+#### 2.1 Number of reads input
 
 
-##### 2.2 Number of contigs output and N50
+#### 2.2 Number of contigs output and N50
 
-##### 2.3 Number of proteins called from each caller
+#### 2.3 Number of proteins called from each caller
 
 43,940,826 unique proteins called by Prodigal.
 41,593,694 unique proteins called by FragGeneScan.
@@ -108,19 +108,19 @@ It's definitely not that fast.
 ?? unique proteins called by both Prodigal and FragGeneScan.
 
 
-##### 2.4 Number of unique proteins in the block
-##### 2.5 Mean number of internally similar proteins at X cutoff (distribution)
-##### 2.6 Size distribution and GC ratios
-##### 2.7 Fraction with confident function assignments
-##### 2.8 Fraction with no similar hits in sample and DB36
-##### 2.9 Estimate of number of novel proteins
+#### 2.4 Number of unique proteins in the block
+#### 2.5 Mean number of internally similar proteins at X cutoff (distribution)
+#### 2.6 Size distribution and GC ratios
+#### 2.7 Fraction with confident function assignments
+#### 2.8 Fraction with no similar hits in sample and DB36
+#### 2.9 Estimate of number of novel proteins
 
-##### 3.1 Fraction of proteins on a contig with > x orfs (2, ..., n)
-##### 3.2 Fraction estimated to be novel operons (all novel orfs)
-##### 3.3 Fraction estimated to linked to known pathways
+#### 3.1 Fraction of proteins on a contig with > x orfs (2, ..., n)
+#### 3.2 Fraction estimated to be novel operons (all novel orfs)
+#### 3.3 Fraction estimated to linked to known pathways
 
-##### 4.1 Rate of novel proteins per megabase of assembled contigs (MoAC)
-##### 4.2 Rate of novel operons per MoAC
-##### 4.3 Expansion rate of known protein family members per MoAC
-##### 4.4 Global estimate of novel proteins
-##### 4.5 Global estimate of unique proteins
+#### 4.1 Rate of novel proteins per megabase of assembled contigs (MoAC)
+#### 4.2 Rate of novel operons per MoAC
+#### 4.3 Expansion rate of known protein family members per MoAC
+#### 4.4 Global estimate of novel proteins
+#### 4.5 Global estimate of unique proteins
