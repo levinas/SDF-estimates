@@ -3,7 +3,7 @@
 
 1. List of which similarity blocks have been computed and an estimate for when the entire set might be completed
    - [x] Revised size estimate for the N x N matrix and output size  
-         N = 1 B; matrix density: [2e-6, 1e-4]; output size: [1 PB, 1000 PB]
+         N = 1 B; output size: [1 PB, 1000 PB]
    - [x] Revised computational effort (cup hours) estimate for N x N matrix  
          2 million CPU-hours
 
