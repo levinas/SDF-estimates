@@ -3,6 +3,7 @@
 
 1. List of which similarity blocks have been computed and an estimate for when the entire set might be completed
    - [ ] Revised size estimate for the N x N matrix and output size
+         N = 1 B; matrix density: [2e-6, 1e-4]; output size: [1 PB, 1000 PB]
    - [ ] Revised computational effort (cup hours) estimate for N x N matrix
 
 2. Summary statistics on the metagenome assemblies for each block
@@ -32,19 +33,31 @@
 
 ##### 1.1 Revised size estimate for the N x N matrix and output size
 
+N = 1 billion  
+Output size: [1 PB, 1000 PB]  
+Matrix density: [2e-6, 1e-4], ~2e-5 on average (bit score >= 40), ~2e-6 (bit score >= 55)
+
 DB36: 11,338,218 proteins  
 Query sample: 993,049 sequences (9% of all DB36)  
-Sample DB36-to-DB36: 1,327,695,951 hits (above 40 bits, k = 10<sup>6</sup>)  
+Sample-DB36 to DB36: 1,327,695,951 hits (above 40 bits, for each query keep as many as a million hits: k = 10<sup>6</sup>)  
 Matrix density: 1.3B / (1M * 11M) = 1.18e-4  
-Output size for full all-to-all: ~1 TB
+Estimated output size for full all-to-all: ~1 TB
 
 SEED NR in 2012: 22,291,704 unique proteins  
-All-to-all blast: 736,909,504 hits (triangle, e-value below 1e-5 (roughly 55 bits))  
+All-to-all blast: 736,909,504 hits (triangle, e-value below 1e-5 (roughly 54 bits))  
 Matrix ensity: 736M / (22M * 22M/2) = 2.97e-6
 
-Soil9 (prodigal): 57,118,321 proteins  
+[UniParc Oct-2014](http://www.uniprot.org/statistics/UniParc): 71,788,376 proteins__
+Estiamted all-to-all output size: (71M/11M)<sup>2</sup> * 1 = ~42 TB
+
+Soil9 (prodigal): 57,118,321 proteins (44,004,484 are unique)  
 soil-to-soil: 67,798,709,206 hits (above 40 bits, k = 10<sup>6</sup>)  
-Matrix density: 67B/(57M<sup>2</sup>) = 2.08e-5
+Matrix density: 67B/(57M<sup>2</sup>) = 2.08e-5 (overestimating because of redundancy)
+Output size: 18 TB
+
+Cow (~10% reads, prodigal), 29,717,714 proteins  
+
+
 
 Notes from the [FastBLAST paper](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0003589):
 
@@ -69,6 +82,8 @@ Suppose:
 This would mean a 1B x 1B protein matrix with density:  
 (0.5 * 0.5/1000 + 0.2 + 0.1) / 1000 = 3e-4
 
+
+
 ##### 1.2 Revised computational effort (cup hours) estimate for N x N matrix
 
 Sample DB36 (9% query) vs DB36: 60 CPU-hours
@@ -81,8 +96,18 @@ that means it would only take 126,000/20,000 = 6 CPU-hours for the all-to-all co
 It's definitely not that fast. 
 
 ##### 2.1 Number of reads input
+
+
 ##### 2.2 Number of contigs output and N50
+
 ##### 2.3 Number of proteins called from each caller
+
+43,940,826 unique proteins called by Prodigal.
+41,593,694 unique proteins called by FragGeneScan.
+
+?? unique proteins called by both Prodigal and FragGeneScan.
+
+
 ##### 2.4 Number of unique proteins in the block
 ##### 2.5 Mean number of internally similar proteins at X cutoff (distribution)
 ##### 2.6 Size distribution and GC ratios
