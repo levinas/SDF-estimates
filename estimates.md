@@ -46,10 +46,16 @@
    - [ ] Fraction estimated to linked to known pathways
 
 4. Rates of discovery
-   - [ ] Rate of novel proteins per megabase of assembled contigs (MoAC)
+   - [x] Rate of novel proteins per megabase of assembled contigs (MoAC)
+         300 / MoAC
+
    - [ ] Rate of novel operons per MoAC
+
    - [ ] Expansion rate of known protein family members per MoAC
-   - [ ] Global estimate of novel proteins
+   
+   - [x] Global estimate of novel proteins
+         300 million
+		 
    - [ ] Global estimate of unique proteins
 
 ## Explanations for Estimates
@@ -256,11 +262,37 @@ Cow: 14,905,829 proteins (48%) has no hits in DB36
 It is puzzling that the cow rumen has a higher fraction of unmatched proteins.
 
 #### 3.1 Fraction of proteins on a contig with > x orfs (2, ..., n)
+
+
 #### 3.2 Fraction estimated to be novel operons (all novel orfs)
+
 #### 3.3 Fraction estimated to linked to known pathways
 
 #### 4.1 Rate of novel proteins per megabase of assembled contigs (MoAC)
+
+The novel protein ratio in soil9 and cow rumen are 38% and 48%
+respectively. But we need to conservative considering the expanding NR
+and potential assembly and gene calling artifacts. So let's assume 30%
+of metagenome proteins are novel.
+
+Estimate based on soil9: 44M/19G * 0.3 = 690 / MoAC  
+Estimate based on cow: 29M/15G * 0.3 = 580 / MoAC
+
+Estimate based on E. coli: 4314/4.6 * 0.3 = 280 / MoAC
+
+The discrepancy likely comes from the prevalence of short proteins
+called in metagenomic assemblies. To be a bit more conservative, our
+overall estimate is 300 novel proteins / MoAC.
+
 #### 4.2 Rate of novel operons per MoAC
+
 #### 4.3 Expansion rate of known protein family members per MoAC
+
 #### 4.4 Global estimate of novel proteins
+
+300 million based on the estimated 30% ratio of novel proteins in 1
+billion metagenomic proteins.
+
+
 #### 4.5 Global estimate of unique proteins
+
