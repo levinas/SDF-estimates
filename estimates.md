@@ -28,7 +28,7 @@
          soil9: 99.9% unique proteins, ~20% unique protein calls shared by Prodigal and FragGeneScan
 		 
    - [x] Mean number of internally similar proteins at X cutoff (distribution)  
-         [see distribution below](####2.6-Mean-number-of-internally-similar-proteins-at-X-cutoff)
+         [see distribution below](#26-mean-number-of-internally-similar-proteins-at-x-cutoff)
 
    - [ ] Fraction with confident function assignments
    - [ ] Fraction with no similar hits in sample and DB36
