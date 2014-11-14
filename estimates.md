@@ -2,9 +2,10 @@
 ## Summary
 
 1. List of which similarity blocks have been computed and an estimate for when the entire set might be completed
-   - [ ] Revised size estimate for the N x N matrix and output size
+   - [x] Revised size estimate for the N x N matrix and output size  
          N = 1 B; matrix density: [2e-6, 1e-4]; output size: [1 PB, 1000 PB]
-   - [ ] Revised computational effort (cup hours) estimate for N x N matrix
+   - [x] Revised computational effort (cup hours) estimate for N x N matrix  
+         2 million CPU-hours
 
 2. Summary statistics on the metagenome assemblies for each block
    - [ ] Number of reads input
@@ -83,10 +84,18 @@ This would mean a 1B x 1B protein matrix with density:
 (0.5 * 0.5/1000 + 0.2 + 0.1) / 1000 = 3e-4
 
 
-
 #### 1.2 Revised computational effort (cup hours) estimate for N x N matrix
 
-Sample DB36 (9% query) vs DB36: 60 CPU-hours
+Overall estimate: 2 million CPU-hours
+
+Sample DB36 (9% query) vs DB36: 60 CPU-hours  
+Estimated full DB36 vs DB36: 660 CPU-hours  
+
+Soil9 all-to-all: 1500 CPU-hours
+
+Estimated reference NR all-to-all: 660 * (100M/11)<sup>2</sup> = ~50K CPU-hours  
+Estimated metagenome all-to-all: 1500 * (1B/57M)<sup>2</sup> * 2 = ~1M CPU-hours  
+(x2 because most metagenome protein matrix are denser than soil)
 
 FastBLAST paper:
 > NR: 6.53 M proteins, all-to-all blast would take ~126,000 CPU-hours.
