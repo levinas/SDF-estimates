@@ -3,7 +3,7 @@
 
 1. List of which similarity blocks have been computed and an estimate for when the entire set might be completed
    - [x] Revised size estimate for the N x N matrix and output size  
-         N = 1 B; output size: [1 PB, 1000 PB]
+         N = 1 B; output size: [10 PB, 1000 PB]
    - [x] Revised computational effort (cup hours) estimate for N x N matrix  
          2 million CPU-hours
 
@@ -35,7 +35,7 @@
 #### 1.1 Revised size estimate for the N x N matrix and output size
 
 N = 1 billion  
-Output size: [1 PB, 1000 PB]  
+Output size: [10 PB, 1000 PB]  
 Matrix density: [2e-6, 1e-4], ~2e-5 on average (bit score >= 40), ~2e-6 (bit score >= 55)
 
 DB36: 11,338,218 proteins  
@@ -54,11 +54,16 @@ Estiamted all-to-all output size: (71M/11M)<sup>2</sup> * 1 = ~42 TB
 Soil9 (prodigal): 57,118,321 proteins (44,004,484 are unique)  
 soil-to-soil: 67,798,709,206 hits (above 40 bits, k = 10<sup>6</sup>)  
 Matrix density: 67B/(57M<sup>2</sup>) = 2.08e-5 (overestimating because of redundancy)  
-Output size: 18 TB
+Output size: ~8 TB
 
 Cow (~10% reads, prodigal), 29,717,714 proteins  
 
+Esitimated proteins for DB36 + KB-all + M5NR + UniParc = 100 M  
+Esitimated proteins for Soil9 + ALER + ForestSoil + Cow Rumen + HMP + Other MG samples = 1000 M
 
+Total proteins: 1 B for one gene caller
+
+* Matrix density
 
 Notes from the [FastBLAST paper](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0003589):
 
