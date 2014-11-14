@@ -41,8 +41,8 @@
 		 For a larger reference DB, the fraction of novel soil proteins may be around 30%.
 
 3. Contiguity and pathway related estimates
-   - [ ] Fraction of proteins on a contig with > x orfs (2, ..., n)  
-         [see two distributions below](https://github.com/levinas/SDF-estimates/blob/master/estimates.md#31-fraction-of-proteins-on-a-contig-with--x-orfs-2--n)
+   - [x] Fraction of proteins on a contig with > x orfs (2, ..., n)  
+         [see distribution below](https://github.com/levinas/SDF-estimates/blob/master/estimates.md#31-fraction-of-proteins-on-a-contig-with--x-orfs-2--n)
    
    - [ ] Fraction estimated to be novel operons (all novel orfs)
    - [ ] Fraction estimated to linked to known pathways
