@@ -28,6 +28,8 @@
          soil9: 99.9% unique proteins, ~20% unique protein calls shared by Prodigal and FragGeneScan
 		 
    - [ ] Mean number of internally similar proteins at X cutoff (distribution)
+         
+
    - [ ] Fraction with confident function assignments
    - [ ] Fraction with no similar hits in sample and DB36
    - [ ] Estimate of number of novel proteins
@@ -175,6 +177,9 @@ Soil9: ~43 million
 
 #### 2.6 Mean number of internally similar proteins at X cutoff (distribution)
 
+Here's the breakdown of the percent identity of all 68 B hits from the
+all-to-all soil9 diamond run.
+
 | Identity % | Hits % | Aggregate % |
 | :---: | ----: | ----: |
 | 100   |   0.1 |   0.1 |
@@ -186,6 +191,30 @@ Soil9: ~43 million
 | 40-49 |  31.1 |  72.1 |
 | 30-39 |  24.0 |  96.1 |
 | 20-29 |   3.9 | 100.0 |
+
+
+Here's the distribution of the numbers of hits for each protein in the
+soil9 comparison. Proteins with one match are singletons as they
+always match themselves.
+
+```
+Hits |Percent  Histogram
+1    | 11.43%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+2    |  7.42%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+4    |  5.79%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+8    |  5.88%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+16   |  6.97%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+32   |  8.40%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+64   | 10.34%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+128  | 10.81%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+256  |  8.86%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+512  |  8.02%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+1024 |  7.09%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+2048 |  5.38%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+4096 |  2.34%  ▬▬▬▬▬▬▬▬▬▬▬▬
+8192 |  0.96%  ▬▬▬▬▬
+16384|  0.28%  ▬▬
+```
 
 #### 2.7 Fraction with confident function assignments
 #### 2.8 Fraction with no similar hits in sample and DB36
