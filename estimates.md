@@ -17,9 +17,9 @@
    - [x] Size distribution and GC ratios  
          soil9: GC%=62.2%, length: [300, 396K], average: 567  
 		 cow: GC%=45.4%, length: [300, 913K], average: 540
-   - [x] Number of proteins called from each caller
+   - [x] Number of proteins called from each caller  
          soil9: 5% difference between Prodigal (44.0 M) and FragGeneScan (41.6 M)
-   - [x] Number of unique proteins in the block
+   - [x] Number of unique proteins in the block  
          soil9: 99.9% unique proteins, ~20% unique protein calls shared by Prodigal and FragGeneScan
    - [ ] Mean number of internally similar proteins at X cutoff (distribution)
    - [ ] Fraction with confident function assignments
