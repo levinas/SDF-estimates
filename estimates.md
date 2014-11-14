@@ -36,6 +36,7 @@ DB36: 11,338,218 proteins__
 Query sample: 993,049 sequences (9% of all DB36) __
 Sample DB36-to-DB36: 1,327,695,951 hits (above 40 bits, k = 10<sup>6</sup>)__
 Matrix density: 1.3B / (1M * 11M) = 1.18e-4
+Output size for full all-to-all: ~1 TB
 
 SEED NR in 2012: 22,291,704 unique proteins__
 All-to-all blast: 736,909,504 hits (triangle, e-value below 1e-5 (roughly 55 bits))__
@@ -54,18 +55,19 @@ Notes from the [FastBLAST paper](http://www.plosone.org/article/info%3Adoi%2F10.
 
 This protein alone would account for 0.0004 of the matrix density.
 
-In the future, the matrix for reference NRs will be dominated by close
-strains. Here's one way of estimating the upper limit.
+In the near future, the matrix density will go up as a small set of
+overly sampled strains dominate the matrix. In the long run, the
+density should come down if the sequencing bias diminishes.
 
-Suppose:  
-(1) we have 1000 taxonomic groups each containing 1000 close strains__
-(2) each genome contains 3000 proteins, 1/3 of which are unique__
-(3) two genomes from the same group share half of the unique proteins  
-(4) two genomes from different groups share 1/5 of the unique proteins  
-(5) 300 proteins are universally shared  
+Suppose:
+(1) we have 1000 taxonomic groups each containing 1000 close strains
+(2) each genome contains 3000 proteins of which 1/3 are unique
+(3) 300 proteins (10% out of ~3,000 proteins in a genome) are universally shared
+(4) two genomes from the same group share half of the proteins
+(5) two genomes from different groups share 1/5 of the proteins
 
-This would mean a 1B x 1B matrix with density:
-0.5 * 0.5<sup>2</sup> + 0.4 * 0.2<sup>2</sup> + 0.1 * 1<sup>2</sup> = 0.24
+This would mean a 1B x 1B protein matrix with density:__
+(0.5 * 0.5/1000 + 0.2 + 0.1) / 1000 = 3e-4
 
 ##### 1.2 Revised computational effort (cup hours) estimate for N x N matrix
 
