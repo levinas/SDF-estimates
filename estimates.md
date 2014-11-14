@@ -136,20 +136,19 @@ Combined 9 soil sample total: 20 B reads, 5 TB
 
 ```
 
-Cow rumen: ~200 M reads, 150 GB, MiSeq reads (~250 bp)
-~6% of all JGI cow rumen data
+Cow rumen: ~200 M reads, 150 GB, MiSeq reads (~250 bp), ~6% of all JGI cow rumen data
 
 #### 2.2 Number of contigs output and N50
 
-Soil9: 33 M contigs, 21 GB fasta, N50 = 550
+Soil9: 33 M contigs, 21 GB fasta, N50 = 550  
 Cow: 25 M contigs, 16 GB fasta, N50 = 439
 
-Soil9: Number of Contigs=33,825,769, Total bp=19,162,572,560
+Soil9: Number of Contigs=33,825,769, Total bp=19,162,572,560  
 Cow: Number of Contigs=25,092,056, Total bp=13,551,414,369
 
 #### 2.3 Size distribution and GC ratios
 
-Soil9: Average length=566.5, Average GC%=62.2%, Shortest=300, Longest=396,247
+Soil9: Average length=566.5, Average GC%=62.2%, Shortest=300, Longest=396,247  
 Cow: Average length=540.1, Average GC%=45.4%, Shortest=300, Longest=913,566
 
 #### 2.4 Number of proteins called from each caller
