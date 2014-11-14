@@ -95,7 +95,7 @@ Soil9 all-to-all: 1500 CPU-hours
 
 Estimated reference NR all-to-all: 660 * (100M/11)<sup>2</sup> = ~50K CPU-hours  
 Estimated metagenome all-to-all: 1500 * (1B/57M)<sup>2</sup> * 2 = ~1M CPU-hours  
-(x2 because most metagenome protein matrix are denser than soil)
+(x 2 because most metagenome protein matrix are denser than soil)
 
 FastBLAST paper:
 > NR: 6.53 M proteins, all-to-all blast would take ~126,000 CPU-hours.
