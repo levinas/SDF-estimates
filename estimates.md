@@ -4,6 +4,7 @@
 1. List of which similarity blocks have been computed and an estimate for when the entire set might be completed
    - [x] Revised size estimate for the N x N matrix and output size  
          N = 1 B; output size: [10 PB, 1000 PB]
+		 
    - [x] Revised computational effort (cup hours) estimate for N x N matrix  
          2 million CPU-hours
 
@@ -11,16 +12,21 @@
    - [x] Number of reads input  
          soil9: 20 billion reads, 5 TB fastq  
 		 cow: ~200 million reads, 150 GB MiSeq fastq
+		 
    - [x] Number of contigs output and N50  
          soil9: 33 million, 21 GB, N50 = 550  
 		 cow: 25 million, 16 GB, N50 = 439
+		 
    - [x] Size distribution and GC ratios  
          soil9: GC%=62.2%, length: [300, 396K], average: 567  
 		 cow: GC%=45.4%, length: [300, 913K], average: 540
+		 
    - [x] Number of proteins called from each caller  
          soil9: 5% difference between Prodigal (44.0 M) and FragGeneScan (41.6 M)
+		 
    - [x] Number of unique proteins in the block  
          soil9: 99.9% unique proteins, ~20% unique protein calls shared by Prodigal and FragGeneScan
+		 
    - [ ] Mean number of internally similar proteins at X cutoff (distribution)
    - [ ] Fraction with confident function assignments
    - [ ] Fraction with no similar hits in sample and DB36
