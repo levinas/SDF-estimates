@@ -30,11 +30,15 @@
    - [x] Mean number of internally similar proteins at X cutoff (distribution)  
          [see two distributions below](#26-mean-number-of-internally-similar-proteins-at-x-cutoff)
 
-   - [ ] Fraction with confident function assignments
+   - [x] Fraction with confident function assignments  
+         soil9: 29%
+		 
+   - [x] Fraction with no similar hits in sample and DB36  
+         soil9: 11%
    
-   - [ ] Fraction with no similar hits in sample and DB36
-   
-   - [ ] Estimate of number of novel proteins
+   - [x] Estimate of number of novel proteins  
+         soil9: 17 million (38%) against DB36  
+		 For a larger reference DB, the fraction of novel soil proteins may be around 30%.
 
 3. Contiguity and pathway related estimates
    - [ ] Fraction of proteins on a contig with > x orfs (2, ..., n)
@@ -201,8 +205,8 @@ always matches itself.
 
 ```
 Hits |Percent  Histogram
-1    | 11.43%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-2    |  7.42%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+1    | 12.43%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+2    |  6.42%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 4    |  5.79%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 8    |  5.88%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 16   |  6.97%  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
@@ -220,22 +224,36 @@ Hits |Percent  Histogram
 
 #### 2.7 Fraction with confident function assignments
 
-Mapping soil9 proteins to DB36:
+Mapping 44M soil9 proteins to DB36:
 
 ```
-0.291  has a confident function assigment
-0.449  matches a non-hypothetical protein
-0.636  matches any reference protein
+29.1%  has a confident function assigment
+44.9%  matches a non-hypothetical protein
+63.6%  matches any reference protein
 ```
 Criteria for *confident function assignment*:
  * identity >= 50%
  * mapped region covers >= 70% sequence length
  * bit score >= 70 (roughly 1e-10)
 
-Estimated based on a sample of 5 million proteins from 12%.
+Estimated based on a sample of 5 million proteins from soil9 (12%).
 
 #### 2.8 Fraction with no similar hits in sample and DB36
+
+```
+13% proteins (5.7 million) has no similar hits in sample and DB36
+25% proteins (11 million) has no hits in DB36 but has hits in sample
+```
+
+Estimated based on a sample of 5 million proteins from soil9 (12%).
+
 #### 2.9 Estimate of number of novel proteins
+
+Soil9: 16,846,818 proteins (38%) has no hits in DB36  
+For a larger reference DB, the fraction of novel soil proteins may be around 30%.
+
+Cow: 14,905,829 proteins (48%) has no hits in DB36  
+It is puzzling that the cow rumen has a higher fraction of unmatched proteins.
 
 #### 3.1 Fraction of proteins on a contig with > x orfs (2, ..., n)
 #### 3.2 Fraction estimated to be novel operons (all novel orfs)
