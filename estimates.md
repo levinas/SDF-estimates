@@ -46,17 +46,17 @@
    - [ ] Fraction estimated to linked to known pathways
 
 4. Rates of discovery
-   - [x] Rate of novel proteins per megabase of assembled contigs (MoAC)
+   - [x] Rate of novel proteins per megabase of assembled contigs (MoAC)  
          300 / MoAC
 
    - [ ] Rate of novel operons per MoAC
 
    - [ ] Expansion rate of known protein family members per MoAC
    
-   - [x] Global estimate of novel proteins
+   - [x] Global estimate of novel proteins  
          ~300 million
 		 
-   - [x] Global estimate of unique proteins
+   - [x] Global estimate of unique proteins  
          ~500 million
 
 ## Explanations for Estimates
