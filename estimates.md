@@ -309,7 +309,7 @@ Of all novel proteins on a contig with at least 3 proteins:
 
 ```
 %57 are on contigs with some non-hypothetical proteins
-%54 are surrounded by some non-hypotheticals within 3 protein distance
+%54 are in close proximity to some non-hypotheticals within 3 protein distance
 ```
 
 #### 4.1 Rate of novel proteins per megabase of assembled contigs (MoAC)
