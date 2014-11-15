@@ -315,7 +315,7 @@ Of all novel proteins on a contig with at least 3 proteins:
 #### 4.1 Rate of novel proteins per megabase of assembled contigs (MoAC)
 
 The novel protein ratio in soil9 and cow rumen are 38% and 48%
-respectively. But we need to conservative considering the expanding NR
+respectively. But we need to be conservative considering the expanding NR
 and potential assembly and gene calling artifacts. So let's assume 30%
 of metagenome proteins are novel.
 
