@@ -59,7 +59,10 @@
 
 4. Rates of discovery
    - [x] Rate of novel proteins per megabase of assembled contigs (MoAC)  
-         300 / MoAC
+         300 / MoAC  
+		 The discrepancy between this estimate and the following two
+         estimates is due to the majority of novel proteins being on
+         short contigs with only 1 or 2 proteins.
 
    - [x] Rate of novel operons per MoAC  
          5 / MoAC
