@@ -300,7 +300,7 @@ Of all novel proteins on a contig with at least 3 proteins:
 
 ```
 %29 are on contigs with all novel proteins
-%31 are on surrounded by all novel proteins within 3 protein distance
+%31 are surrounded by all novel proteins within 3 protein distance
 ```
 
 #### 3.3 Fraction estimated to linked to known pathways
@@ -309,7 +309,7 @@ Of all novel proteins on a contig with at least 3 proteins:
 
 ```
 %57 are on contigs with some non-hypothetical proteins
-%54 are on surrounded by some non-hypotheticals within 3 protein distance
+%54 are surrounded by some non-hypotheticals within 3 protein distance
 ```
 
 #### 4.1 Rate of novel proteins per megabase of assembled contigs (MoAC)
