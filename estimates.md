@@ -56,10 +56,10 @@
    - [x] Rate of novel proteins per megabase of assembled contigs (MoAC)  
          300 / MoAC
 
-   - [x] Rate of novel operons per MoAC
+   - [x] Rate of novel operons per MoAC  
          5 / MoAC
 		 
-   - [x] Expansion rate of known protein family members per MoAC
+   - [x] Expansion rate of known protein family members per MoAC  
          60 / MoAC
 
    - [x] Global estimate of novel proteins  
