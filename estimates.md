@@ -44,17 +44,24 @@
    - [x] Fraction of proteins on a contig with > x orfs (2, ..., n)  
          [see distribution below](https://github.com/levinas/SDF-estimates/blob/master/estimates.md#31-fraction-of-proteins-on-a-contig-with--x-orfs-2--n)
    
-   - [ ] Fraction estimated to be novel operons (all novel orfs)
-   - [ ] Fraction estimated to linked to known pathways
+   - [x] Fraction estimated to be novel operons (all novel orfs)  
+         29% proteins are in novel operons  
+		 (considering only contigs with at least 3 proteins)
+		 
+   - [x] Fraction estimated to linked to known pathways  
+         54% proteins are linked to a non-hypotheticals within 3 protein distance  
+		 (considering only contigs with at least 3 proteins)
 
 4. Rates of discovery
    - [x] Rate of novel proteins per megabase of assembled contigs (MoAC)  
          300 / MoAC
 
-   - [ ] Rate of novel operons per MoAC
+   - [x] Rate of novel operons per MoAC
+         5 / MoAC
+		 
+   - [x] Expansion rate of known protein family members per MoAC
+         60 / MoAC
 
-   - [ ] Expansion rate of known protein family members per MoAC
-   
    - [x] Global estimate of novel proteins  
          ~300 million
 		 
@@ -269,7 +276,7 @@ It is puzzling that the cow rumen has a higher fraction of unmatched proteins.
 ```
 ORFs    | Percent  Histogram
 1       | 54.05%   ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-2       | 39.15%   ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+2-3     | 39.15%   ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 4-7     |  4.30%   ▬▬▬▬▬
 8-15    |  1.32%   ▬▬
 16-31   |  0.62%   ▬
@@ -281,7 +288,21 @@ ORFs    | Percent  Histogram
 
 #### 3.2 Fraction estimated to be novel operons (all novel orfs)
 
+Of all novel proteins on a contig with at least 3 proteins:
+
+```
+%29 are on contigs with all novel proteins
+%31 are on surrounded by all novel proteins within 3 protein distance
+```
+
 #### 3.3 Fraction estimated to linked to known pathways
+
+Of all novel proteins on a contig with at least 3 proteins:
+
+```
+%57 are on contigs with some non-hypothetical proteins
+%54 are on surrounded by some non-hypotheticals within 3 protein distance
+```
 
 #### 4.1 Rate of novel proteins per megabase of assembled contigs (MoAC)
 
@@ -301,7 +322,16 @@ overall estimate is 300 novel proteins / MoAC.
 
 #### 4.2 Rate of novel operons per MoAC
 
+Soil9: 586,055 proteins in are in novel operons (on contigs with at least 3 proteins)  
+
+Rate of proteins in novel operons = 586,055/19G = 31 / MoAC  
+Suppose the average operon size is 6, rate of novel operons = 5
+
 #### 4.3 Expansion rate of known protein family members per MoAC
+
+Soil9: 1,097,911 novel proteins are within 3 genes away from a known protein (on contigs with at least 3 proteins)  
+
+Rate of proteins in novel operons = 1,097,911/19G = 58 / MoAC  
 
 #### 4.4 Global estimate of novel proteins
 
