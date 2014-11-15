@@ -2,6 +2,11 @@
 ## Summary
 
 1. List of which similarity blocks have been computed and an estimate for when the entire set might be completed
+
+   Estimates for the combined 9 soil samples (named soil9) are
+   complete. Some estimates are also available for the JGI cow rumen
+   MiSeq dataset.
+
    - [x] Revised size estimate for the N x N matrix and output size  
          N = 1 B; output size: [10 PB, 1000 PB]
 		 
